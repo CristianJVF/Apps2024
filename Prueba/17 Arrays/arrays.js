@@ -51,4 +51,33 @@ setFirstElement(["a", "b", "c"], "i")
 
 // Ejercicio 6
 
-getLastElement
+const getLastElement = (a) => {
+    const r = a[a.length - 1];
+    console.log(r);
+}
+
+getLastElement([4, 6, 6, 0, 4, 8])
+
+// Ejercicio 7 // Ejercicio 8
+
+const arr = [1, 9, -3, 8, -5, 0, 3, 4, 6, -7];
+let positivos = 0;
+let sumaNegativos = 0;
+let negativos = 0;
+let sumaPositivos = 0;
+let ceros = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) positivos++, sumaPositivos += arr[i];
+    else if (arr[i] < 0) negativos++, sumaNegativos += arr[i];
+    else if (arr[i] == 0) ceros++
+}
+console.log(positivos);
+console.log(negativos);
+console.log(ceros);
+
+console.log(sumaNegativos / negativos);
+console.log(sumaPositivos / positivos);
+
+
+
