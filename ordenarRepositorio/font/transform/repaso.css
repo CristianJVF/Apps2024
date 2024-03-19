@@ -1,0 +1,122 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fuente.ttf);
+}
+
+
+
+.head {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+.container a {
+    text-decoration: none;
+    font-family: myfont;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: block;
+    padding: 30px;
+    color: aliceblue;
+    font-size: 15px;
+    background: url(indiana.png.crdownload) no-repeat, linear-gradient(0deg, rgba(8, 193, 194, 1) 0%, rgba(25, 30, 200, 1) 100%);
+    background-size: 200%;
+    background-position: 90px 0px;
+    transition: 0.5s;
+}
+
+.container a:hover {
+    background-position: -60px -70px;
+    transition: 0.5s;
+}
+
+.transition {
+    background: url(147841.svg);
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 200px;
+    transition: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+section div {
+    width: 45%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.uno {
+    background-color: yellow;
+}
+
+.dos {
+    background-color: red;
+}
+
+.tres {
+    background-color: blue;
+}
+
+.cuatro {
+    background-color: green;
+}
+
+.cinco {
+    background-color: gray;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+section div:hover {
+    z-index: 2;
+}
+
+.transform {
+    display: flex;
+}
+
+.transform div {
+    width: 30%;
+}
+
+.transform a {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #98FB98;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+p {
+    width: 40%;
+    z-index: -1;
+}
+
+.transform a:hover {
+    /* transform: scalex(1.5); */
+    width: 120%;
+    transition: 2s;
+    z-index: 4;
+}

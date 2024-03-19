@@ -1,0 +1,41 @@
+body {
+    background-color: #BFC1B0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.title {
+    letter-spacing: 20px;
+    color: #191970;
+    font-size: 50px;
+    text-align: center;
+}
+
+#img1 {
+    text-align: center;
+}
+
+.article1,
+.arcticle2 {
+    display: flex;
+}
+
+#img3 {
+    float: right;
+}
+
+h2 {
+    font-size: 30px;
+    background-color: #5B6135;
+    padding: 5px;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+}

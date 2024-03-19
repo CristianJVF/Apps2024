@@ -1,0 +1,35 @@
+@font-face {
+    font-family: mifuente;
+    src: url(fuente.ttf);
+}
+
+p {
+    font-size: 40px;
+    font-family: mifuente;
+}
+
+.border {
+    border-width: 40px;
+    border-style: solid;
+    border-image: url(border.png) 29 29 stretch;
+    transition: 1s;
+}
+
+p:hover {
+    background-color: black;
+    transition: 5s;
+}
+
+.transform {
+    text-align: center;
+    margin: 50px;
+    transition: 3s;
+    text-shadow: 60px -30px red, 60px 30px green, -60px 30px yellow, -60px -30px blue;
+}
+
+.transform:hover {
+    font-size: 3em;
+    color: yellowgreen;
+    transition: 3s;
+    text-shadow: -90px -30px 1px yellow, -90px 30px 1px red, 90px -30px 1px blue, 90px 30px 1px green;
+}

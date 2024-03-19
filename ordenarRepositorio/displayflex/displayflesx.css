@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    background-image: url(../carpeta1/Carpeta3/bg-2.jpg);
+    width: 750px;
+    height: 570px;
+    margin: auto;
+}
+
+.parrafos {
+    width: 200px;
+    padding: 40px;
+}

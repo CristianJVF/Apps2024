@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #D3D3D3;
+}
+
+header h1 {
+    background-color: black;
+    color: wheat;
+    padding: 20px;
+    margin: 0;
+    text-align: end;
+}
+
+section {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.borderbotom {
+    border-bottom: solid 5px white;
+    padding: 20px;
+}
+
+.pbotom {
+    border-bottom: solid 5px black;
+    padding: 20px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.gris {
+    background-color: #808080;
+    font-size: 30px;
+    color: beige;
+    font-weight: bolder;
+    padding: 10px;
+
+}

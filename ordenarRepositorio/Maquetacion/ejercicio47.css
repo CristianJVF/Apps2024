@@ -1,0 +1,53 @@
+body {
+    background: url(imatges/bg.gif);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.container {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.dflex {
+    display: flex;
+}
+
+.sBetween {
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 120px;
+}
+
+.textCenter {
+    text-align: center
+}
+
+section div {
+    padding: 40px;
+    gap: 40px;
+}
+
+A:hover {
+    background-color: red;
+}
+
+ul:first-child {
+    background-color: red;
+}
