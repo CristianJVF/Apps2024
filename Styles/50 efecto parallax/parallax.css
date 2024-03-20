@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    background: url(autopista/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: face;
+    src: url(autopista/Roboto-Thin.ttf);
+}
+
+* {
+    font-family: face;
+}
+
+.d-flex {
+    display: flex;
+}
+
+header {
+    background-color: #487572d5;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+    padding: 30px;
+    border-right: 1px solid black;
+}
+
+.second-header {
+    background-color: #81a18d00;
+    height: 400px;
+}
+
+.container {
+    background-color: #F2F2F2;
+}
+
+section {
+    margin: auto;
+    width: 1100px;
+    text-align: center;
+}
+
+section h1 {
+    margin: 0;
+    padding: 30px;
+}
+
+section h4 {
+    padding: 30px;
+    border-bottom: 2px solid black;
+}
+
+section div {
+    gap: 20px;
+}
+
+button {
+    padding: 14px;
+    width: 100%;
+    background-color: #72AC80;
+    border: 0;
+}
+
+#container {
+    background-color: white;
+}
+
+.container2 {
+    padding: 40px 0 40px 0;
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.container2 article img {
+    width: 100%;
+}
+
+.transparente {
+    background-color: rgba(0, 255, 255, 0);
+    height: 300px;
+}
+
+footer {
+    padding: 40px;
+    background-color: black;
+}
+
+footer div {
+    margin: auto;
+    width: 1100px;
+    text-align: center;
+    color: beige;
+}
