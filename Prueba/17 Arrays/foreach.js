@@ -35,16 +35,33 @@ const board = ["_", "_", "_", "_", "_", "_", "_", "_", "_"];
 const printBoard = () => {
     alert(board[0] + "|" + board[1] + "|" + board[2] + "\n" + board[3] + "|" + board[4] + "|" + board[5] + "\n" + board[6] + "|" + board[7] + "|" + board[8]);
 }
+const again = () => {
+    const r = prompt("casilla ya jugada, prueba otra vez")
+    return r;
+}
 
 while (haGanadoAlguien) {
     printBoard()
     const jugada = prompt("jugador 1 has tu jugada");
-    if (board[jugada] !== "X" && board[jugada] !== "O") board.forEach(a => board[jugada] = "X");
-    else prompt("casilla ya jugada, prueba otra vez"), board.forEach(a => board[jugada] = "X");
-    if (board.forEach(a) === "-") haGanadoAlguien = false;
+    if (board[jugada] == "_") board.forEach(() => board[jugada] = "X");
+    else {
+        let otraVez = true
+        while (otraVez) {
+            const rt = again()
+            if (board[rt] == "_") board.forEach(() => board[rt] = "X"), otraVez = false
+            else otraVez = true
+        }
+    }
+    // if (board.forEach() === "-") haGanadoAlguien = false;
     const jugadaDos = prompt("jugador 2 has tu jugada")
-    if (board[jugadaDos] !== "O" && board[jugadaDos] !== "O") board.forEach(a => board[jugadaDos] = "O");
-    else if (board[jugadaDos] === "O" || board[jugada] === "X") haGanadoAlguien = false
+    if (board[jugadaDos] == "_") board.forEach(() => board[jugadaDos] = "O");
+    else {
+        let otraVez = true
+        while (otraVez) {
+            const rt = again()
+            if (board[rt] == "_") board.forEach(() => board[rt] = "X"), otraVez = false
+            else otraVez = true
+        }
+    }
 }
-
-console.log(board)
+// if (board.forEach() === "-") haGanadoAlguien = false;
