@@ -40,6 +40,7 @@ const again = () => {
     return r;
 }
 
+
 while (haGanadoAlguien) {
     printBoard()
     const jugada = prompt("jugador 1 has tu jugada");
@@ -59,7 +60,7 @@ while (haGanadoAlguien) {
         let otraVez = true
         while (otraVez) {
             const rt = again()
-            if (board[rt] == "_") board.forEach(() => board[rt] = "X"), otraVez = false
+            if (board[rt] == "_") board.forEach(() => board[rt] = "O"), otraVez = false
             else otraVez = true
         }
     }
