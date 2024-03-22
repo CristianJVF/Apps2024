@@ -1,0 +1,47 @@
+header {
+    text-align: center;
+}
+
+header img {
+    height: 200px;
+}
+
+.articulo {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+
+.articulo ul {
+    width: 30%;
+}
+
+.imagenes {
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+footer {
+    width: 700px;
+    margin: auto;
+}
+
+table {
+    border: 1px solid gray;
+}
+
+table p {
+    font-weight: bolder;
+    text-align: center;
+}
+
+table h4 {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid;
+}

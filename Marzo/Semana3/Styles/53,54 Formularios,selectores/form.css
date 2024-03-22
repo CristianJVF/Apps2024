@@ -1,0 +1,54 @@
+.container {
+    width: 400px;
+}
+
+p label,
+p input {
+    display: inline-block;
+    width: 40%;
+}
+
+button {
+    width: 40%;
+}
+
+input[required] {
+    border: 2px solid black;
+}
+
+input:valid {
+    background: green;
+}
+
+input:invalid {
+    background: red;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label+.oculto {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked+label+.oculto {
+    opacity: 1;
+}
+
+
+input[type="checkbox"]+.aaa {
+    display: inline-block;
+    background: url(check_radio_sheet.png);
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+}
+
+input:invalid .bbb {
+    opacity: 0;
+}
+
+input:valid .bbb {
+    opacity: 1;
+}

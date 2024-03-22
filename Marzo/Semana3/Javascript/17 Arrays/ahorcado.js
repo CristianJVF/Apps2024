@@ -14,11 +14,11 @@ const pintarLetra = (string, character, index) => {
     return string.substring(0, index) + character + string.substring(index + character.length)
 }
 
+
 const adivina = () => {
     const letra = prompt("introduce una letra")
     for (let i = 0; i < secretWord.length; i++) {
         if (secretWord[i] == letra) console.log(pintarLetra(hiddenWord, letra, i));
-
     }
 }
 

@@ -31,6 +31,6 @@ const users = [
     },
 ];
 
-const choosedUser = users.find(u => u[0].name === "juan") // Modifica esta línea para resolver el ejercicio
+const choosedUser = users.find(u => u.name === "Juan").age // Modifica esta línea para resolver el ejercicio
 
 console.log(choosedUser); // Debería mostrar: 17
