@@ -52,3 +52,26 @@ input:invalid .bbb {
 input:valid .bbb {
     opacity: 1;
 }
+
+#ventana {
+    display: flex;
+    border: 1px solid;
+    height: 500px;
+    width: 700px;
+}
+
+#ventana>div:first-child {
+    height: 100%;
+    width: 40px;
+    background-color: green;
+}
+
+#ventana>div:nth-child(2) {
+    width: 100%;
+}
+
+#ventana>div:last-child {
+    height: 100%;
+    width: 40px;
+    background-color: red;
+}

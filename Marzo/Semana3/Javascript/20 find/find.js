@@ -34,3 +34,14 @@ const users = [
 const choosedUser = users.find(u => u.name === "Juan").age // Modifica esta línea para resolver el ejercicio
 
 console.log(choosedUser); // Debería mostrar: 17
+
+console.log(users[0].age)
+const jovenes = users.filter(num => num.isActive);
+const edad = users.filter(num => num.age > 18);
+
+console.log(jovenes)
+console.log(edad)
+
+const array = [1, 2, 3];
+const media = array.reduce((acc, e) => acc + e, 0) / array.length
+console.log(media) 
