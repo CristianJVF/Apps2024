@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="euros">
+        <output id="dolares"></output>
+        <br>
+        <button type="button" id="convertir">Convertir</button>
+    </form>
+    <br>
+    <form>
+        <input type="number" id="centigrados">
+        <output id="farenheit"></output>
+        <br>
+        <button type="button" id="calcular">Calcular</button>
+    </form>
+    <br><br>
+    <form style="width: 300px;">
+        <label for="name">Nombre</label> <br>
+        <input type="text" id="name"> <br> <br>
+        <label for="select">Material</label>
+        <select id="select">
+            <option value="Plastico">Plastico</option>
+            <option value="Carton">Carton</option>
+            <option value="Hierro">Hierro</option>
+        </select>
+        <br> <br>
+        <label for="radio">Seleccione un material</label> <br>
+        <input type="radio" class="radio" value="Diminutas">Diminutas <br>
+        <input type="radio" class="radio" value="medianas">Medianas <br>
+        <input type="radio" class="radio" value="Grandes">Grandes <br> <br>
+        <label for="text">Comentarios</label> <br>
+        <textarea name="" id="coment" cols="30" rows="10"></textarea> <br>
+        <button type="button" id="concat">Enviar</button>
+        <output id="resultado"></output>
+    </form>
+    <br>
+    <br>
+    <form>
+        <input type="number" id="numero"> <br>
+        <button type="button" id="evaluar">Evaluar</button> <br>
+        <input type="text" id="txt">
+    </form>
+
+    <h1>Ejercicio 5 coste viaje</h1>
+
+    <form style="border: 1px solid; width: 600px; display: flex; height: 150px;">
+        <div style="width: 410px;">
+            <label for="noches">Introduzca el numero de noches</label>
+            <input type="number" id="numNights">
+            <br> <br>
+            <label for=" hotel">Coste hotel</label>
+            <input type="number" id="hotel"> <br>
+            <label for="viaje">Coste viaje</label>
+            <input type="number" id="viaje"> <br>
+            <label for="coche">Coste alquiler coche</label>
+            <input type="number" id="coche"> <br>
+            <label for="hotel">Coste total</label>
+            <input type="number" id="total">
+        </div>
+        <div style="height: 10px;">
+            <select id="destinos">
+                <option value="Oviedo">Oviedo</option>
+                <option value="Tokio">Tokio</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+            </select>
+            <button type="button" id="calcularCoste">Calcular coste</button>
+        </div>
+    </form>
+
+    <script src="dom.js"></script>
+</body>
+
+</html>
