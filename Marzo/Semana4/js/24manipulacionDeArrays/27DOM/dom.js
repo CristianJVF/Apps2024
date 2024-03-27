@@ -32,18 +32,38 @@ const adivina = () => {
 
 document.querySelector("#evaluar").addEventListener("click", adivina)
 
+// ejercicio 5 coste viaje
+
+const calculateHotelCost = a => a * 140;
+
+const calculateAirplaneCost = (noches, destino) => {
+    let destinos = {
+        Tokio: 700,
+        Oviedo: 15,
+        Madrid: 90,
+        Barcelona: 90
+    }
+    let cost = noches * destinos[destino]
+    if (noches > 3) cost *= 0.9
+    return cost
+}
+calculateRentingCarCost = (n) => {
+    let cost = 40 * n;
+    if (n >= 7) cost -= 50;
+    else if (n >= 3) cost -= 20;
+    return cost
+}
+
 const calculateCost = () => {
     const numNights = document.querySelector("#numNights").value;
+    const destiny = document.querySelector("#destiny").value;
     const hotelCost = calculateHotelCost(numNights);
+    const tripCost = calculateAirplaneCost(numNights, destiny);
+    const carCost = calculateRentingCarCost(numNights);
     document.querySelector("#hotelCost").value = hotelCost;
+    document.querySelector("#viaje").value = tripCost;
+    document.querySelector("#coche").value = carCost;
 }
 
-const calculateHotelCost = () => {
+document.querySelector("#calcularCoste").addEventListener("click", calculateCost)
 
-}
-const calculateAirplaneCost = () => {
-
-}
-calculateRentingCarCost = () => {
-
-}
