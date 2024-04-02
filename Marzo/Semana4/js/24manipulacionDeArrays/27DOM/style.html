@@ -5,14 +5,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #lightboxContainer {
+            display: none;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #lightbox {
+            margin: 100px auto 0 auto;
+            width: 50%;
+            height: 50%;
+            padding: 16px;
+            border: 16px solid orange;
+            background-color: white;
+            overflow: auto;
+            position: relative;
+            z-index: 9999;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 520px;
+            width: 520px;
+            overflow: hidden;
+        }
+
+        .slider {
+            height: 512px;
+            width: 1600px;
+        }
+
+        img {
+            height: 256px;
+            width: 256px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .burguer {
+
+            width: 400px;
+            height: 800px;
+            position: fixed;
+            right: -350px;
+            transition: 1s
+        }
+
+        .desplegableON {
+            right: 0px;
+            background-color: aqua;
+        }
+
+        .clickBurguer {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
+    <div class="burguer">
+        <div class="clickBurguer"></div>
+    </div>
     <div>Cuales de los siguientes elementos son orientados a objetos <span class="a">Java</span>, VB6, <span
             class="b">C++</span>, C#,
         <span class="c">Cobol</span>
     </div>
     <button id="ver">Ver respuestas</button>
+    <br> <br>
+    <a href="#" id="pulsa">Pulsa</a>
+    <div id="lightboxContainer">
+        <div id="overlay"></div>
+        <div id="lightbox">This is the lightbox content.
+            <a href="#" id="ocultar">Close</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slider">
+            <img src="tuxes/PinguLinux_Batman.png" alt="">
+            <img src="tuxes/PinguLinux_Bob_Marley.png" alt="">
+            <img src="tuxes/PinguLinux_Capitan_America.png" alt="">
+            <img src="tuxes/PinguLinux_Celula.png" alt="">
+            <img src="tuxes/PinguLinux_FolletTortuga.png" alt="">
+            <img src="tuxes/PinguLinux_Goku.png" alt="">
+            <img src="tuxes/PinguLinux_Goku_saiyan.png" alt="">
+            <img src="tuxes/PinguLinux_Homer.png" alt="">
+            <img src="tuxes/PinguLinux_Huevo_Kinder.jpg" alt="">
+            <img src="tuxes/PinguLinux_Hulk.png" alt="">
+            <img src="tuxes/PinguLinux_Jack_Sparrow.jpg" alt="">
+            <img src="tuxes/PinguLinux_King.png" alt="">
+        </div>
+    </div>
+    <a href="#" id="sgte">siguiente</a>
+
+    <div class="box"></div>
+    <button id="rebota">rebota</button>
+
 
     <script src="style.js"></script>
 </body>
