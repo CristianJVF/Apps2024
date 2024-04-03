@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 100%;
+            transition: 0.6s;
+        }
+
+        .invisible {
+            scale: 0;
+            opacity: 0;
+        }
+
+        .visible {
+            scale: 1;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="overflow: hidden; width: 350px; height: 350px;">
+        <a href="#">Enlace 1</a>
+        <div style="width: 1100px; height: 350px; margin: auto ; transition: 0.6s;" id="layers">
+            <img src="/Marzo/Semana4/js/24manipulacionDeArrays/27DOM/tuxes/PinguLinux_Batman.png" alt="#" class="capa">
+
+            <img src="/Marzo/Semana4/js/24manipulacionDeArrays/27DOM/tuxes/PinguLinux_Goku.png" alt="#" class="capa">
+
+            <img src="/Marzo/Semana4/js/24manipulacionDeArrays/27DOM/tuxes/PinguLinux_Hulk.png" alt="#" class="capa">
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+
+</html>
