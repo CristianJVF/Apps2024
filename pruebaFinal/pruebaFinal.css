@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    border-radius: 5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.w-auto {
+    width: 100%;
+}
+
+body {
+    background: url(img/back.png);
+}
+
+
+
+.container {
+    margin: auto;
+    width: 1024px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header h1 {
+    padding-top: 40px;
+}
+
+#logo {
+    margin: 20px;
+}
+
+#second-header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(265deg, rgba(255, 255, 255, 1) 0%, rgba(126, 126, 126, 1) 57%);
+}
+
+header ul {
+    padding: 12px 0 12px 0;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+input[type="search"] {
+    height: 40px;
+    width: 250px;
+}
+
+section {
+    gap: 20px;
+    margin-top: 20px;
+}
+
+span {
+    color: blue;
+}
+
+#articulos {
+    width: 75%;
+    background-color: white;
+    padding: 0 15px 0 15px;
+}
+
+article img {
+    float: left;
+}
+
+#articulos h1,
+#aside h1 {
+    background-color: #646464;
+    padding: 10px;
+    margin: 10px;
+}
+
+#aside {
+    width: 25%;
+
+}
+
+aside div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #FED700;
+    color: white;
+}
+
+aside li {
+    margin: 10px;
+    padding: 5px;
+    border-top: 2px solid white;
+}
+
+@media (max-width:1075px) {
+    .container {
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    #articulos {
+        width: 90%;
+        margin: auto;
+    }
+
+    #aside {
+        margin: auto;
+        width: 94%;
+    }
+
+    #second-header {
+        width: 94%;
+        margin: auto;
+    }
+}
+
+@media (max-width:850px) {
+    input[type="search"] {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header div {
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 120px;
+        height: auto;
+    }
+
+    header h1 {
+        padding: 10px;
+    }
+
+    #second-header ul {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:700px) {
+    article img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    #second-header {
+        background: #a3a3a3;
+    }
+
+    input[type="search"] {
+        width: auto;
+    }
+}
